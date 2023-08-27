@@ -15,8 +15,8 @@ The purpose of this project is to predict the economic parameters of a group of 
 ### Methods Used
 * Data preparation
 * Exploratory analysis
-* Data Visualization
-* Machine Learning
+* Data visualization
+* Machine learning
 
 ## Project Description
 <p>The dataset contains the demographic and socioeconomic characteristics of US citizens according to the 1994 census. The training sample consists of sixteen columns. The first of them is the composition identifier (data points), the next fourteen are independent variables, the sixteenth is the target variable that the model should predict.</p><p>The test sample consists of fifteen columns — the same as the training sample, but without the target variable. The task is to train a classification model that predicts whether a person's income exceeds $50,000 or not.</p><p>The metric to use is f1-score.</p>
