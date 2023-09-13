@@ -30,10 +30,14 @@ for column in num_columns:
 Выбросы замененны граничными значениями:
 ```
 for column in num_columns:
-    x_train.loc[x_train[column] > get_outliers(x_train[column])[1], column] = get_outliers(x_train[column])[1]
-    x_train.loc[x_train[column] < get_outliers(x_train[column])[0], column] = get_outliers(x_train[column])[0]
-    x_test.loc[x_test[column] > get_outliers(x_train[column])[1], column] = get_outliers(x_train[column])[1]
-    x_test.loc[x_test[column] < get_outliers(x_train[column])[0], column] = get_outliers(x_train[column])[0]
+    x_train.loc[x_train[column] > get_outliers(x_train[column])[1],
+                                 column] = get_outliers(x_train[column])[1]
+    x_train.loc[x_train[column] < get_outliers(x_train[column])[0],
+                                  column] = get_outliers(x_train[column])[0]
+    x_test.loc[x_test[column] > get_outliers(x_train[column])[1],
+                                column] = get_outliers(x_train[column])[1]
+    x_test.loc[x_test[column] < get_outliers(x_train[column])[0],
+                                column] = get_outliers(x_train[column])[0]
 ```
 В категриальных признаках знак "?" был заменен на значение "Other" с помощью SimpleImputer:
 ```
