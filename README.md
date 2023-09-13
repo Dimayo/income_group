@@ -84,7 +84,8 @@ print('Лучший результат: ', gs.best_score_)
 ## Результат
 Лучший результат показала модель случайного леса с f1-score равным 84%:
 ```
-model = RandomForestClassifier(n_estimators=300, min_samples_split=14, min_samples_leaf = 3, max_features ='sqrt', max_depth=20, class_weight=None)
+model = RandomForestClassifier(n_estimators=300, min_samples_split=14, min_samples_leaf = 3,
+                               max_features ='sqrt', max_depth=20, class_weight=None)
 model.fit(x_train, y_train)
 ```
 Далее был создан и сохранен файл с предсказанием на тестовой выборке:
