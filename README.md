@@ -1,5 +1,5 @@
 # Прогнозирование группы доходов
-https://github.com/Dimayo/income_group_project/blob/main/income.ipynb<br>
+https://github.com/Dimayo/income_group/blob/main/income.ipynb<br>
 Библиотеки python: pandas, seaborn, matplotlib, numpy, sklearn
 
 ## Цель проекта
